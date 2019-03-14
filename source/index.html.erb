@@ -1,0 +1,36 @@
+
+<%= partial 'partials/nav' %>
+<%= partial 'partials/main_headline' %>
+
+<div class="w-100 header-border"></div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <% data.config.components.row1.each do |component| %>
+    <div class="bg-<%= component.style %> mr-md-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+      <div class="mt-3 px-5">
+        <h2 class="display-5"><%= component.headline %></h2>
+        <%= component.text %>
+      </div>
+      <div class="mx-auto">
+        <img class="img-fluid" src="<%= component.imagePath %>" />
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <% data.config.components.row2.each do |component| %>
+    <div class="bg-<%= component.style %> mr-md-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+      <div class="mt-3 px-5">
+        <h2 class="display-5"><%= component.headline %></h2>
+        <%= component.text %>
+      </div>
+      <div class="mx-auto">
+        <img class="img-fluid" src="<%= component.imagePath %>" />
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+<%= partial 'partials/footer' %>

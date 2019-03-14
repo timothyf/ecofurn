@@ -1,0 +1,164 @@
+$ecofurn-brown: #543a15;
+$ecofurn-brown-dark: #3a2508;
+$ecofurn-orange: #d19235;
+$text-primary: #dbd6d6;
+$text-dark: #363536;
+$ecofurn-green: #006600;
+
+body {
+  max-width: 1425px;
+  margin: auto;
+}
+
+h1 {
+  color: $text-dark;
+}
+
+p {
+  color: $text-dark;
+  text-align: left;
+}
+
+h1 .emphasize, h2 .emphasize, p .emphasize {
+  font-weight: bold !important;
+}
+
+.header-border {
+  background-color: $ecofurn-green;
+  height: 50px;
+}
+
+.bg-dark p {
+  color: $text-primary;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.bg-dark {
+  background-color: $ecofurn-brown !important;
+}
+
+.bg-dark h2 {
+  color: $text-primary;
+}
+
+.bg-light h2 {
+  color: $text-dark;
+}
+
+.btn-primary {
+    color: white;
+    background-color: $ecofurn-brown;
+    border-color: $ecofurn-brown;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: $ecofurn-brown-dark;
+    border-color: $ecofurn-brown-dark;
+}
+
+#headline-btn {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  line-height: 26px;
+}
+
+footer {
+  background-color: $ecofurn-brown;
+  color: $text-primary;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0px !important;
+}
+
+footer a {
+  color: $text-primary;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.headline-text {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#headline-image {
+  min-width: 170px;
+}
+
+.site-header {
+  background-color: $ecofurn-brown;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: $text-primary;
+  transition: ease-in-out color .15s;
+  font-size: 1.2rem;
+}
+.site-header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#main-headline {
+  background-color: $ecofurn-orange !important;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }

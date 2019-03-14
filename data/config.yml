@@ -1,0 +1,37 @@
+
+components:
+    row1:
+      - name: How It Works
+        headline: How It Works
+        text: <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.</p>
+        imagePath: images/home.jpg
+        style: dark
+      - name: Headline 2
+        headline: Headline 2
+        text: <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.</p>
+        imagePath: images/home.jpg
+        style: light
+    row2:
+      - name: Home Owners
+        headline: Home Owners
+        text: <p class="lead">
+                Homeowners enjoy the benefits of a two-stage furnace by adding on an EcoFurn to every single-stage
+                furnace you install.
+              </p>
+              <p>
+                Value
+                This will increase the value in them while meeting their needs in a more cost - friendly way.
+              </p>
+        imagePath: images/home.jpg
+        style: light
+      - name: Professionals
+        headline: Professionals
+        text: <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.</p>
+        imagePath: images/home.jpg
+        style: dark
