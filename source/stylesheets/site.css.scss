@@ -1,9 +1,38 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 $ecofurn-brown: #543a15;
 $ecofurn-brown-dark: #3a2508;
 $ecofurn-orange: #d19235;
 $text-primary: #dbd6d6;
 $text-dark: #363536;
 $ecofurn-green: #006600;
+
+$ecofurn-font: 'Esphimere-Bold';
+
+@font-face {
+    font-family: 'Esphimere-Bold';
+    src:url('../fonts/Esphimere-Bold.ttf.woff') format('woff'),
+        url('../fonts/Esphimere-Bold.ttf.svg#Esphimere-Bold') format('svg'),
+        url('../fonts/Esphimere-Bold.ttf.eot'),
+        url('../fonts/Esphimere-Bold.ttf')  format('truetype'),
+        url('../fonts/Esphimere-Bold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Esphimere-Light';
+  src:url('../fonts/Esphimere-Light.ttf.woff') format('woff'),
+      url('../fonts/Esphimere-Light.ttf.svg#Esphimere-Light') format('svg'),
+      url('../fonts/Esphimere-Light.ttf.eot'),
+      url('../fonts/Esphimere-Light.ttf')  format('truetype'),
+      url('../fonts/Esphimere-Light.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   max-width: 1425px;
@@ -12,6 +41,30 @@ body {
 
 h1 {
   color: $text-dark;
+  font-size: 2.0rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+// Medium devices (tablets, 768px and up)
+// Large devices (desktops, 992px and up)
+// Extra large devices (large desktops, 1200px and up)
+
+@include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 2.0rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 p {
@@ -21,6 +74,10 @@ p {
 
 h1 .emphasize, h2 .emphasize, p .emphasize {
   font-weight: bold !important;
+}
+
+.ecofurn-font {
+  font-family: $ecofurn-font;
 }
 
 .header-border {
@@ -58,6 +115,26 @@ h1 .emphasize, h2 .emphasize, p .emphasize {
     color: white;
     background-color: $ecofurn-brown-dark;
     border-color: $ecofurn-brown-dark;
+}
+
+.cmp-img {
+  border-radius: 10px;
+}
+
+.bg-light .cmp-img {
+  border: 7px double $ecofurn-orange;
+}
+
+.bg-dark .cmp-img {
+  border: 7px double $ecofurn-green;
+}
+
+.bg-dark .cmp-txt hr {
+  background-color: $text-primary;
+}
+
+.bg-light .cmp-txt hr {
+  background-color: $ecofurn-brown;
 }
 
 #headline-btn {
